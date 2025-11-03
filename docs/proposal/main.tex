@@ -1,0 +1,94 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{geometry}
+\geometry{margin=1in}
+
+\title{Anomaly Detection in TESS Light Curves using Machine Learning}
+\author{Your Name}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+
+The Transiting Exoplanet Survey Satellite (TESS) is a NASA mission designed to discover exoplanets by monitoring the brightness of over 200,000 stars. TESS has produced an enormous dataset of light curves, capturing stellar variability, transits, and various astrophysical phenomena. While many events are well-understood (planetary transits, stellar flares, eclipsing binaries), there exists a significant number of anomalous or unexpected patterns that require automated detection and classification.
+
+\section{Objectives}
+
+The primary objectives of this project are:
+
+\begin{enumerate}
+    \item To develop and implement machine learning algorithms for automated anomaly detection in TESS light curves
+    \item To classify different types of anomalies (e.g., stellar flares, transit-like events, instrumental artifacts, unknown variability patterns)
+    \item To analyze the characteristics and frequency of detected anomalies
+    \item To compare the performance of different ML approaches (e.g., supervised vs. unsupervised learning, neural networks vs. traditional methods)
+\end{enumerate}
+
+\section{Data}
+
+The project will utilize publicly available TESS data from the Mikulski Archive for Space Telescopes (MAST). TESS observes stars at 2-minute cadence for 27-day sectors, providing high-quality time-series photometric data. We will focus on:
+
+\begin{itemize}
+    \item Light curves from multiple TESS sectors
+    \item Pre-processed and raw light curve data
+    \item Known anomaly catalogs for training and validation
+\end{itemize}
+
+\section{Methodology}
+
+\subsection{Data Preprocessing}
+\begin{itemize}
+    \item Normalization and detrending of light curves
+    \item Removal of systematic errors and instrumental artifacts
+    \item Feature extraction from time-series data
+\end{itemize}
+
+\subsection{Machine Learning Approaches}
+\begin{itemize}
+    \item \textbf{Unsupervised Learning}: Clustering algorithms (k-means, DBSCAN) and autoencoders for anomaly detection
+    \item \textbf{Supervised Learning}: Classification models (Random Forest, Support Vector Machines, Neural Networks) trained on labeled anomaly data
+    \item \textbf{Time-Series Methods}: LSTM networks and other recurrent architectures suited for sequential data
+\end{itemize}
+
+\subsection{Evaluation Metrics}
+\begin{itemize}
+    \item Precision, recall, and F1-score for classification tasks
+    \item ROC curves and AUC for anomaly detection
+    \item Comparison with known anomaly catalogs
+\end{itemize}
+
+\section{Expected Outcomes}
+
+\begin{itemize}
+    \item A working pipeline for automated anomaly detection in TESS data
+    \item Classification of detected anomalies into meaningful categories
+    \item Statistical analysis of anomaly characteristics and occurrence rates
+    \item Comparison of different ML approaches and their effectiveness
+\end{itemize}
+
+\section{Timeline}
+
+\begin{itemize}
+    \item \textbf{Week 1-2}: Data acquisition and preprocessing
+    \item \textbf{Week 3-4}: Implementation of baseline ML models
+    \item \textbf{Week 5-6}: Model refinement and hyperparameter tuning
+    \item \textbf{Week 7-8}: Analysis of results and paper writing
+\end{itemize}
+
+\section{References}
+
+\begin{itemize}
+    \item Ricker, G. R., et al. (2015). "Transiting Exoplanet Survey Satellite (TESS)." Journal of Astronomical Telescopes, Instruments, and Systems, 1(1), 014003.
+    \item Armstrong, D. J., et al. (2020). "A TESS Catalog of Stellar Flares." Monthly Notices of the Royal Astronomical Society, 494, 1054-1065.
+    \item Shallue, C. J., \& Vanderburg, A. (2018). "Identifying Exoplanets with Deep Learning: A Five-Planet Resonant Chain around Kepler-80 and an Eighth Planet around Kepler-90." The Astronomical Journal, 155, 94.
+\end{itemize}
+
+\end{document}
+
