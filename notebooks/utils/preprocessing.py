@@ -1,3 +1,4 @@
+import numpy as np
 
 # ------------------------------------------------------------
 # Helper: Compute 8th-order Fourier coefficients
