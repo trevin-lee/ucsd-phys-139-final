@@ -9,6 +9,7 @@ from .match_asassn_to_tess import cross_match_asassn
 from .match_gaia_to_tess import cross_match_gaia
 from .preprocessing import fourier_fit, fourier_features
 from .preprocessing import stetson_K
+from .training import train_model
 
 __all__ = [
     'download_tess_light_curves', 
@@ -19,5 +20,6 @@ __all__ = [
     'compute_features_to_csv', 
     'fourier_fit', 
     'fourier_features', 
-    'stetson_K'
+    'stetson_K',
+    'train_model'
 ]
