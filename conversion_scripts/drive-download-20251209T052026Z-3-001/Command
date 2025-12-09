@@ -1,0 +1,1 @@
+python3 /$$$Your directory$$$/cross_match.py --catalog_dir="/$$$Your directory$$$/asassn_variables_x.csv" --file_dir="/$$$Your directory$$$/" --threshold_distance=$$$ any number  in degree$$$ --download_filename="Cross_Match_Result_Sectorxxx.csv" --download_dir="/$$$Your directory$$$/"
