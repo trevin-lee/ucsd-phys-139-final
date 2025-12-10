@@ -3,13 +3,10 @@ Utils package for TESS anomaly detection project.
 """
 
 from .tess_downloader import download_tess_light_curves
-from .gaia_downloader import download_gaia_data
 from .asassn_downloader import download_asassn_catalog
 from .match_asassn_to_tess import cross_match_asassn
-from .match_gaia_to_tess import cross_match_gaia
 from .preprocessing import fourier_fit, fourier_features
 from .preprocessing import stetson_K
-from .training import train_model
 
 __all__ = [
     'download_tess_light_curves', 
